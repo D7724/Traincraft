@@ -34,7 +34,7 @@ export function Landing() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1650821108375-67fbb5cf6b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBydW5uaW5nJTIwZm9yZXN0JTIwbmF0dXJlJTIwZ29sZGVuJTIwaG91cnxlbnwxfHx8fDE3Nzc2MzI4Njd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://images.unsplash.com/photo-1683758575782-a632dbbe9eed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Runner in nature"
             className="w-full h-full object-cover opacity-40"
           />
