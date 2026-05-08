@@ -3,6 +3,7 @@ import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { Zap, Target, Calendar, TrendingUp, Clock, Award } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import logoSvg from '../../ressources/logo.svg';
 
 export function Landing() {
   const benefits = [
@@ -22,9 +23,10 @@ export function Landing() {
     <div className="min-h-screen bg-[#0A0A0A]">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-[#1ED760]">
-            TRAIN<span className="text-white">CRAFT</span>
-          </div>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logoSvg} alt="Traincraft" className="h-12" />
+            <span className="text-2xl font-bold text-[#1ED760]">TRAIN<span className="text-white">CRAFT</span></span>
+          </Link>
           <Link to="/dashboard">
             <Button variant="outline">Login</Button>
           </Link>
@@ -99,7 +101,11 @@ export function Landing() {
               </div>
             </div>
             <div className="w-96 h-64 bg-[#0A0A0A] rounded-lg flex items-center justify-center">
-              <div className="text-white/40">Training Preview UI</div>
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1683758575782-a632dbbe9eed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Runner in nature"
+                className="w-full h-full object-cover opacity-40"
+              />
             </div>
           </div>
         </Card>
