@@ -89,7 +89,7 @@ export function Training() {
         <div className="border border-white/5 rounded-xl overflow-hidden">
           <div className="grid grid-cols-7">
             {weekDays.map((day, i) => (
-              <div key={i} className="text-center text-xs font-medium text-white/30 py-4 border-b border-white/5">
+              <div key={i} className="text-center text-xs font-medium text-white/30 py-4 border-b border-white/5 bg-white/[0.02]">
                 {day}
               </div>
             ))}
@@ -106,13 +106,15 @@ export function Training() {
               return (
                 <div
                   key={d.day}
-                  className={`min-h-[110px] p-2.5 border-r border-b border-white/5 last:border-r-0 flex flex-col relative ${
+                  className={`min-h-[110px] p-2.5 border-r border-b border-white/5 last:border-r-0 flex flex-col relative transition-all duration-200 hover:bg-white/[0.03] ${
                     isToday ? 'bg-[#1ED760]/5' : ''
                   }`}
                 >
                   <div className="flex items-center justify-between mb-1.5">
-                    <span className={`text-sm font-semibold leading-none w-7 h-7 flex items-center justify-center rounded-full ${
-                      isToday ? 'bg-[#1ED760] text-[#0A0A0A]' : d.completed ? 'text-white/25' : 'text-white/50'
+                    <span className={`text-sm font-semibold leading-none w-7 h-7 flex items-center justify-center rounded-full transition-all duration-200 ${
+                      isToday
+                        ? 'bg-[#1ED760] text-[#0A0A0A] shadow-[0_0_12px_-2px_#1ED760]'
+                        : d.completed ? 'text-white/25' : 'text-white/50'
                     }`}>
                       {d.day}
                     </span>
@@ -123,12 +125,12 @@ export function Training() {
                       {d.completed ? '✓ Erholt' : 'Ruhetag'}
                     </span>
                   ) : (
-                    <div className={`mt-auto rounded-lg p-2 ${
+                    <div className={`mt-auto rounded-lg p-2 transition-all duration-200 ${
                       d.completed
                         ? 'bg-white/5'
                         : isToday
-                        ? 'bg-[#1ED760]/15'
-                        : 'bg-white/5'
+                        ? 'bg-[#1ED760]/15 border border-[#1ED760]/20'
+                        : 'bg-white/5 hover:bg-white/[0.07]'
                     }`}>
                       <p className={`text-[11px] font-semibold leading-tight mb-1 ${
                         d.completed ? 'text-white/40' : 'text-white/90'
@@ -158,7 +160,7 @@ export function Training() {
 
                   {isToday && !d.completed && !d.isRest && (
                     <Link to="/workout" className="mt-1.5">
-                      <div className="flex items-center justify-center gap-1 bg-[#1ED760] text-[#0A0A0A] text-[10px] font-bold py-1.5 rounded-lg hover:bg-[#1ED760]/90 transition-colors">
+                      <div className="flex items-center justify-center gap-1 bg-[#1ED760] text-[#0A0A0A] text-[10px] font-bold py-1.5 rounded-lg transition-all duration-300 hover:bg-[#1ED760]/90 hover:shadow-[0_0_16px_-4px_#1ED760] active:scale-95">
                         <Play size={10} />
                         Start
                       </div>
