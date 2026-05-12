@@ -26,8 +26,8 @@ export function Navigation() {
               key={path}
               to={path}
               className={`flex items-center gap-2 transition-colors ${location.pathname === path
-                  ? 'text-[#1ED760]'
-                  : 'text-white/60 hover:text-white'
+                ? 'text-[#1ED760]'
+                : 'text-white/60 hover:text-white'
                 }`}
             >
               <Icon size={20} />

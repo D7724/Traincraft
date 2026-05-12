@@ -4,6 +4,7 @@ import { Card } from '../components/Card';
 import { Zap, Target, Calendar, TrendingUp, Clock, Award } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logoSvg from '../../ressources/logo.svg';
+import image from '../../ressources/Image_Traincraft.png'
 
 export function Landing() {
   const benefits = [
@@ -101,11 +102,7 @@ export function Landing() {
               </div>
             </div>
             <div className="w-96 h-64 bg-[#0A0A0A] rounded-lg flex items-center justify-center">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1683758575782-a632dbbe9eed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Runner in nature"
-                className="w-full h-full object-cover opacity-40"
-              />
+              <img src={image} />
             </div>
           </div>
         </Card>
