@@ -24,7 +24,7 @@ export function Landing() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoSvg} alt="Traincraft" className="h-12" />
+            <img src={logoSvg} alt="Traincraft" className="h-10" />
             <span className="text-2xl font-bold text-[#1ED760]">TRAIN<span className="text-white">CRAFT</span></span>
           </Link>
           <Link to="/dashboard">

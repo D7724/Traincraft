@@ -1,41 +1,113 @@
-<svg width="1200" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="logoGradient" x1="220" y1="250" x2="580" y2="650" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#00C2FF"/>
-      <stop offset="50%" stop-color="#00D9B8"/>
-      <stop offset="100%" stop-color="#B4FF4A"/>
-    </linearGradient>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-    <linearGradient id="textGradient" x1="380" y1="0" x2="620" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#00D9B8"/>
-      <stop offset="100%" stop-color="#7CFF6B"/>
-    </linearGradient>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- Logo Symbol -->
-  <g filter="url(#glow)">
-    <!-- Outer Shape -->
-    <path d="M400 260L560 360V450L480 405V610L400 660L320 610V405L240 450V360L400 260Z"
-          fill="url(#logoGradient)"/>
-
-    <!-- Inner Cutout -->
-    <path d="M400 330L500 390V455L445 425V560L400 590L355 560V425L300 455V390L400 330Z"
-          fill="#000000"/>
-
-    <!-- Left Arm -->
-    <path d="M240 360L320 405V470L280 495L240 450V360Z"
-          fill="url(#logoGradient)" opacity="0.85"/>
-
-    <!-- Right Arm -->
-    <path d="M560 360L480 405V470L520 495L560 450V360Z"
-          fill="url(#logoGradient)" opacity="0.85"/>
-  </g>
-</svg>
+<svg
+   width="99.906654mm"
+   height="121.07334mm"
+   viewBox="0 0 99.906654 121.07334"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"><inkscape:page
+       x="0"
+       y="0"
+       width="99.906654"
+       height="121.07334"
+       id="page2"
+       margin="0"
+       bleed="0" /></sodipodi:namedview><defs
+     id="defs1"><linearGradient
+       id="logoGradient"
+       x1="220"
+       y1="250"
+       x2="580"
+       y2="650"
+       gradientUnits="userSpaceOnUse"><stop
+         offset="0%"
+         stop-color="#00C2FF"
+         id="stop1" /><stop
+         offset="50%"
+         stop-color="#00D9B8"
+         id="stop2" /><stop
+         offset="100%"
+         stop-color="#B4FF4A"
+         id="stop3" /></linearGradient><filter
+       id="glow"
+       x="-0.09"
+       y="-0.072"
+       width="1.18"
+       height="1.144"><feGaussianBlur
+         stdDeviation="12"
+         result="blur"
+         id="feGaussianBlur5" /><feMerge
+         id="feMerge6"><feMergeNode
+           in="blur"
+           id="feMergeNode5" /><feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" /></feMerge></filter><linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGradient"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       x1="220"
+       y1="250"
+       x2="580"
+       y2="650" /><linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGradient"
+       id="linearGradient2"
+       gradientUnits="userSpaceOnUse"
+       x1="220"
+       y1="250"
+       x2="580"
+       y2="650" /><linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGradient"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="220"
+       y1="250"
+       x2="580"
+       y2="650" /></defs><g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.886076,-14.420219)"><g
+       style="fill:none"
+       id="g1"
+       transform="matrix(0.26458333,0,0,0.26458333,-31.993923,-46.751449)"
+       inkscape:export-filename="g1.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><g
+         filter="url(#glow)"
+         id="g9"><!-- Outer Shape --><path
+           d="m 400,260 160,100 v 90 l -80,-45 v 205 l -80,50 -80,-50 V 405 l -80,45 v -90 z"
+           fill="url(#logoGradient)"
+           id="path6"
+           style="fill:url(#linearGradient1)" /><!-- Inner Cutout --><path
+           d="m 400,330 100,60 v 65 l -55,-30 v 135 l -45,30 -45,-30 V 425 l -55,30 v -65 z"
+           fill="#000000"
+           id="path7" /><!-- Left Arm --><path
+           d="m 240,360 80,45 v 65 l -40,25 -40,-45 z"
+           fill="url(#logoGradient)"
+           opacity="0.85"
+           id="path8"
+           style="fill:url(#linearGradient2)" /><!-- Right Arm --><path
+           d="m 560,360 -80,45 v 65 l 40,25 40,-45 z"
+           fill="url(#logoGradient)"
+           opacity="0.85"
+           id="path9"
+           style="fill:url(#linearGradient3)" /></g></g></g></svg>
