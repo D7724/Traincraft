@@ -1,10 +1,25 @@
+import { useEffect } from 'react';
+import { toast } from 'sonner';
 import { Navigation } from '../components/Navigation';
 import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { Play, Calendar, Flame, Clock, Award, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 export function Dashboard() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    toast('Willkommen zurück, Alex!', {
+      description: 'Bereit für dein heutiges Training?',
+      duration: 5000,
+      icon: <Flame size={20} className="text-[#1ED760]" />,
+      action: {
+        label: 'Zum Training',
+        onClick: () => navigate('/training'),
+      },
+    });
+  }, [navigate]);
   return (
     <div className="min-h-screen bg-[#0A0A0A] pt-24 pb-16">
       <Navigation />

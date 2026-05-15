@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
+import { Toaster } from 'sonner';
 import { Landing } from './pages/Landing';
 import { Dashboard } from './pages/Dashboard';
 import { Training } from './pages/Training';
@@ -9,6 +10,16 @@ import { Profile } from './pages/Profile';
 export default function App() {
   return (
     <BrowserRouter basename="/Traincraft/">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: '#1A1A2E',
+            border: '1px solid rgba(255,255,255,0.1)',
+            color: '#fff',
+          },
+        }}
+      />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
